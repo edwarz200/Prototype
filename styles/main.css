@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.arriba{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+}
+.arriba section article:first-child,.arriba section article:nth-child(3){
+position: relative;
+float: left;
+}
+.arriba section article:nth-child(1){
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #f0ad4e;
+    border-bottom: 20px solid #f0ad4e;
+    transform: rotate(84deg);
+}
+.arriba section article:nth-child(2){
+    width: 76px;
+    height: 0px;
+    border-right: 32px solid transparent;
+    border-left: 31px solid transparent;
+    border-bottom: 44px solid #428bca;
+}
+.arriba section article:nth-child(3){
+    width: 51px;
+    height: 0px;
+    border-right: 44px solid transparent;
+    border-left: 44px solid transparent;
+    border-top: 60px solid #428bca;
+}
