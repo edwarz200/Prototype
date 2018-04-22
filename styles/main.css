@@ -2,35 +2,74 @@
     margin: 0;
     padding: 0;
 }
-.arriba{
+.containermenu{
+    position: relative;
+    height: 150px;
+    width: 1366px;
+    background-color: #428bca;
+}
+.menu{
     position: absolute;
-    width: 200px;
-    left: 20px;
+    left: 360px;
 }
-.arriba section article:first-child,.arriba section article:nth-child(3){
-position: relative;
-float: left;
+.containermenu section article:first-child,.containermenu section article:nth-child(3),
+.menu ul li, .logo p{
+    position: relative;
+    float: left;
 }
-.arriba section article:nth-child(1){
+nav ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    line-height: 48px;
+    padding: 17px;
+    position: relative;
+    text-decoration: none;
+    font-family: Lucida sans;
+    font-size: 12px;
+    color: white;
+    transition: 0.2s;
+}
+nav ul li section,nav ul li a{
+    width: 106px;
+    height: 48px;
+}
+/* logo */
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.containermenu section article:nth-child(1){
     width: 0;
     height: 0;
     border-right: 20px solid transparent;
     border-top: 20px solid transparent;
-    border-left: 20px solid #f0ad4e;
-    border-bottom: 20px solid #f0ad4e;
+    border-left: 20px solid #CA33FF;
+    border-bottom: 20px solid #CA33FF;
     transform: rotate(84deg);
 }
-.arriba section article:nth-child(2){
+.containermenu section article:nth-child(2){
     width: 76px;
     height: 0px;
     border-right: 32px solid transparent;
     border-left: 31px solid transparent;
-    border-bottom: 44px solid #428bca;
+    border-bottom: 44px solid #A233FF;
 }
-.arriba section article:nth-child(3){
+.containermenu section article:nth-child(3){
     width: 51px;
     height: 0px;
     border-right: 44px solid transparent;
     border-left: 44px solid transparent;
-    border-top: 60px solid #428bca;
+    border-top: 60px solid #A233FF;
 }
