@@ -4,16 +4,17 @@
 }
 .containermenu{
     position: relative;
-    height: 150px;
-    width: 1366px;
+    height: 90px;
+    width: 1349px;
     background-color: #428bca;
 }
 .menu{
     position: absolute;
     left: 360px;
 }
+
 .containermenu section article:first-child,.containermenu section article:nth-child(3),
-.menu ul li, .logo p{
+.menu ul li{
     position: relative;
     float: left;
 }
@@ -44,32 +45,58 @@ nav ul li section,nav ul li a{
     width: 106px;
     height: 48px;
 }
+
 /* logo */
+/*
 .logo{
     position: absolute;
     top: 20px;
     left: 40px;
 }
-.containermenu section article:nth-child(1){
+.logo article:nth-child(1){
+    top: 3px;
+    right: 4px;
     width: 0;
     height: 0;
     border-right: 20px solid transparent;
     border-top: 20px solid transparent;
     border-left: 20px solid #CA33FF;
     border-bottom: 20px solid #CA33FF;
-    transform: rotate(84deg);
+    transform: rotate(80deg);
 }
-.containermenu section article:nth-child(2){
+.logo article:nth-child(2){
     width: 76px;
     height: 0px;
     border-right: 32px solid transparent;
     border-left: 31px solid transparent;
     border-bottom: 44px solid #A233FF;
 }
-.containermenu section article:nth-child(3){
+.logo article:nth-child(3){
     width: 51px;
     height: 0px;
     border-right: 44px solid transparent;
     border-left: 44px solid transparent;
     border-top: 60px solid #A233FF;
+}
+ .logo article:nth-child(4) {
+    position: absolute;
+    top: 3px;
+    left: 120px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid #f0ad4e;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}*/ 
+/* Contenido pagina */
+.cpindex nav{
+    position: absolute;
+    background-color:  gray;
+    height: 674px;
+    width: 200px; 
+}
+.cpindex section{
+    background-color:  yellow;
+    height: 200px; 
+    border-bottom-right-radius: 10%;
 }
