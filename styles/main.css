@@ -5,7 +5,6 @@
 .containermenu{
     position: relative;
     height: 90px;
-    width: 1349px;
     background-color: #428bca;
 }
 .menu{
@@ -18,7 +17,7 @@
     position: relative;
     float: left;
 }
-nav ul{
+.containermenu ul{
     position: relative;
     top: 0;
     left: 0;
@@ -28,75 +27,73 @@ nav ul{
     list-style: none;
     text-align: center;
 }
-nav ul li{
+.containermenu ul li{
     display: inline-block;
 }
-nav ul li a{
-    line-height: 48px;
-    padding: 17px;
+.containermenu ul li a{
     position: relative;
+    padding: 17px;
+    line-height: 48px;
+    font-size: 12px;
     text-decoration: none;
     font-family: Lucida sans;
-    font-size: 12px;
-    color: white;
     transition: 0.2s;
+    color: white;
 }
-nav ul li section,nav ul li a{
+.containermenu ul li section,.containermenu ul li a{
     width: 106px;
     height: 48px;
 }
 
-/* logo */
-/*
-.logo{
+/* menu */
+.cpindex nav {
     position: absolute;
-    top: 20px;
-    left: 40px;
+    height: 572px;
+    width: 200px;
+    background-color: #333;
+    color:#fff;
+    outline: solid 1px #2a2a2a;
 }
-.logo article:nth-child(1){
-    top: 3px;
-    right: 4px;
-    width: 0;
-    height: 0;
-    border-right: 20px solid transparent;
-    border-top: 20px solid transparent;
-    border-left: 20px solid #CA33FF;
-    border-bottom: 20px solid #CA33FF;
-    transform: rotate(80deg);
+.cpindex nav h2{
+    text-align: center;
+    padding: 20px;
+    background: #2a2a2a;
 }
-.logo article:nth-child(2){
-    width: 76px;
-    height: 0px;
-    border-right: 32px solid transparent;
-    border-left: 31px solid transparent;
-    border-bottom: 44px solid #A233FF;
+.cpindex nav ul {
+    list-style: none;
 }
-.logo article:nth-child(3){
-    width: 51px;
-    height: 0px;
-    border-right: 44px solid transparent;
-    border-left: 44px solid transparent;
-    border-top: 60px solid #A233FF;
+.cpindex nav li {
+    background: #333;
+    outline: solid 1px #2a2a2a;
+    transition-property: border-left;
+    transition-duration: 0.3s;
 }
- .logo article:nth-child(4) {
-    position: absolute;
-    top: 3px;
-    left: 120px;
-    width: 0;
-    height: 0;
-    border-left: 40px solid #f0ad4e;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}*/ 
+.cpindex nav li:hover{
+    background-color: #2a2a2a;
+    border-left: 5px solid #eee;
+}
+.cpindex nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+}
+
 /* Contenido pagina */
-.cpindex nav{
-    position: absolute;
-    background-color:  gray;
-    height: 674px;
-    width: 200px; 
-}
-.cpindex section{
-    background-color:  yellow;
+.cpindex section:nth-child(2){
+    position: relative;
+    top: 3px;
+    left: 203px;
     height: 200px; 
-    border-bottom-right-radius: 10%;
+    width: 1159px;
+    border-bottom-right-radius: 20px;
+    background-color:  ;
+}
+.cpindex section:nth-child(3){
+    position: relative;
+    top: 6px;
+    left: 200px;
+    height: 366px;
+    width: 1166px;
+    background-color: ;
 }
