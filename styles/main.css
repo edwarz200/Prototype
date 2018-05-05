@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 .containermenu{
     position: relative;
     height: 90px;
-    background-color: #428bca;
+    background-color: #2a2a2a;
 }
 .menu{
     position: absolute;
@@ -33,12 +35,11 @@
 .containermenu ul li a{
     position: relative;
     padding: 17px;
-    line-height: 48px;
+    color: white;
     font-size: 12px;
-    text-decoration: none;
     font-family: Lucida sans;
     transition: 0.2s;
-    color: white;
+    text-decoration: none;
 }
 .containermenu ul li section,.containermenu ul li a{
     width: 106px;
@@ -48,18 +49,18 @@
 /* menu */
 .cpindex nav {
     position: absolute;
-    height: 572px;
+    height: 546px;
     width: 200px;
-    background-color: #333;
     color:#fff;
+    background-color: #333;
     outline: solid 1px #2a2a2a;
 }
 .cpindex nav h2{
-    text-align: center;
     padding: 20px;
     background: #2a2a2a;
+    text-align: center;
 }
-.cpindex nav ul {
+ul {
     list-style: none;
 }
 .cpindex nav li {
@@ -73,27 +74,79 @@
     border-left: 5px solid #eee;
 }
 .cpindex nav a{
-    display: block;
+    padding: 12px;
     color: #fff;
     text-decoration: none;
-    padding: 12px;
+    display: block;
 }
 
 /* Contenido pagina */
-.cpindex section:nth-child(2){
+.cpindex #section2{
     position: relative;
     top: 3px;
     left: 203px;
-    height: 200px; 
-    width: 1159px;
+    height: 200px;
+    width: 1162px;
     border-bottom-right-radius: 20px;
-    background-color:  ;
+    overflow: hidden;
+}
+.cpindex section:nth-child(2) article section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, .3);
+    transition: background-color .5s;
+}
+.cpindex section:nth-child(2):hover article section{
+    background-color: rgba(51, 51, 51, .7);
+}
+.cpindex section:nth-child(2) article ul li img{
+    width: 100%;
+    transform: translateY(-250px);
+}
+.cpindex #section2 article ul li img{
+    float: left;
+    filter: blur(0px);
+    transition: flur .3s;
+}
+.cpindex #section2:hover article ul li img{
+    filter: blur(1.5px);
+}
+.cpindex nav img{
+    margin-right:40px;
+    width: 30px;
+    height: 30px;
 }
 .cpindex section:nth-child(3){
     position: relative;
     top: 6px;
-    left: 200px;
-    height: 366px;
-    width: 1166px;
-    background-color: ;
+    left: 201px;
+    height: 341px;
+    width: 1165px;
+}
+.cpindex section:nth-child(3) p{
+    color: #333;
+    font-size: 20px;
+    font-family: 'Titan One', cursive;
+}
+.cpindex section article section ul{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 130px;
+    height: 29px;
+    background-color: rgb(28, 174, 231,.6);
+    border-top-left-radius: 30px;
+    transition: background-color .3s;
+}
+.cpindex section:hover article section ul{
+    background-color: rgb(28, 174, 231,1);    
+}
+.cpindex section article section ul a{
+    margin-left: 20px;
+    color: white;
+    font-size: 24px;
+    display: inline-block;
+    text-decoration: none;
 }
