@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #333;
+}
 a{
     text-decoration: none;
 }
@@ -105,13 +108,14 @@ ul {
     background-color: rgba(51, 51, 51, .7);
 }
 #section2 article ul:nth-child(1) li img{
+    position: relative;
+    top: 180px;
+    height: 300px;
     width: 100%;
-    transform: translateY(-250px);
-}
-#section2 article ul:nth-child(1) li img{
-    float: left;
     filter: blur(0px);
     transition: flur .3s;
+    transform: translateY(-250px);
+    float: left;
 }
 #section2:hover article ul:nth-child(1) li img{
     filter: blur(1.5px);
@@ -127,6 +131,7 @@ ul {
     left: 201px;
     height: 341px;
     width: 1165px;
+    background-color: #333;
 }
 .cpindex section:nth-child(3) p{
     color: #333;
@@ -159,11 +164,11 @@ ul {
     left: 50px;
     width: 300px;
     height: 90px;
-    background-color: rgba(51, 51, 51, .7);
+    background-color: rgba(43, 43, 43, 0.7);
     transition: background-color .35s;
 }
 #section2:hover article section ul:nth-child(2){
-    background-color: rgb(71, 70, 70);
+    background-color: rgb(58, 58, 58);
 }
 #section2 article section ul:nth-child(2) h1, #section2 article section ul:nth-child(2) p,
 #section2 article section ul:nth-child(2) a{
@@ -192,5 +197,44 @@ ul {
 #section2 article section ul:nth-child(2) li:nth-child(4){
     margin-left: 70px;
 }
-
-
+.cpindex section:nth-child(3) ul{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    height: 300px;
+    width: 800px;
+}
+.cpindex section:nth-child(3) ul li {
+    position: absolute;
+    top: 20px;     
+    width: 200px;
+    height: 240px;
+    border-radius: 2px;
+    background-color: #319AA9;
+    transition: .5s;
+    border-radius: 4px;
+    display: inline-block;
+}
+.cpindex section:nth-child(3) ul li:nth-child(2){
+    left: 700px;
+}
+.cpindex section:nth-child(3) ul li:nth-child(3){
+    left: 350px;
+}
+.cpindex section:nth-child(3) ul li:hover{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(94, 94, 94,.5);
+}
+.cpindex section:nth-child(3) ul li img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    transition: .5s;
+}
+.cpindex section:nth-child(3) ul li:hover img{
+    width: 150px;
+    height: 150px;
+    opacity: .75;
+}
